@@ -1,12 +1,11 @@
 import React, { Fragment } from 'react';
-import App from '../App';
+import MainStatus from '../Components/MainStatus';
 
 
 const Home = () => {
   return (
-    <Fragment>
-     <App>
-    </App>
+    <Fragment>    
+    <MainStatus/>
     </Fragment>
   );
 };
