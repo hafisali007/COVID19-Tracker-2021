@@ -1,17 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import thunk from 'redux-thunk';
+import rootReducer from './Reducers';
+import './Style/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+const initialState = {};
+
+const middleware = [thunk];
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider
+    store={createStore(
+      rootReducer,
+      initialState,
+      composeWithDevTools(applyMiddleware(...middleware))
+    )}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
