@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
-import MainStatus from '../Components/MainStatus';
+import SectionContainer from '../Components/SectionContainer';
 
 
 const Home = () => {
   return (
     <Fragment>    
-    <MainStatus/>
+    <SectionContainer/>
     </Fragment>
   );
 };

@@ -1,12 +1,12 @@
 import * as PropTypes from 'prop-types'
-import '../Style/App.css';
+import React from 'react';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
   const Status = ({
     country = null,
     flag = null,
-    cases = null,
+    cases,
     todayCases,
     deaths,
     todayDeaths,
@@ -114,53 +114,6 @@ import Tooltip from 'react-bootstrap/Tooltip';
       {/* <span>{updated > 0 && moment(updated).fromNow()}.</span> */}
     </p>
   </>
-
-    // <div className="App">
-    //      <div className='WCDR'>
-    //     <OverlayTrigger
-    //       key='Cases'
-    //       placement='bottom'
-    //       overlay={
-    //         <Tooltip className='myToolTip' id='tooltip-bottom'>
-    //           Confirmed Cases
-    //         </Tooltip>
-    //       }>
-    //       <div className='WWCases'>
-    //         <p className='WWIcons'>
-    //           <i className='fas fa-users'></i> Cases
-    //         </p>
-    //         {cases.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}
-    //         {todayCases > 0 && (
-    //           <span className='WWtodayResults'>
-    //             +
-    //             {todayCases
-    //               .toString()
-    //               .replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}
-    //           </span>
-    //         )}
-    //       </div>
-    //     </OverlayTrigger>
-    //     </div>
-
-    //     <div className="container">   
-    //   <div className="box">    
-    //   <div className="box-case">    
-    //   <p className="WWIcons">Cases</p>
-    //     </div>
-    //     </div>
-    //     <div className="box">   
-    //     <div className="box-death">   
-    //     <p className="WWIcons">Death</p> 
-    //     </div>
-    //     </div>
-    //     <div className="box">   
-    //     <div className="box-recover"> 
-    //     <p className="WWIcons">Recovered</p>   
-    //     </div>        
-    //     </div>        
-    //   </div> 
-       
-    // </div>
   );
 };
               
