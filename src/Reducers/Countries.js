@@ -1,6 +1,6 @@
 import {
     GET_ALL_COUNTRIES,
-    GET_MainStatus,
+    GET_WWStats,
     SET_ALL_COUNTRIES_LOADING,
     ERROR
   } from '../Actions/Types';
@@ -23,8 +23,8 @@ export default (state = initialState, action) => {
         allCountriesloading: false
       };
 
-    case GET_MainStatus:
-      return { ...state, MainStatus: action.payload, allCountriesloading: false };
+    case GET_WWStats:
+      return { ...state, WWStats: action.payload, allCountriesloading: false };
 
     case SET_ALL_COUNTRIES_LOADING:
       return { ...state, allCountriesloading: true };

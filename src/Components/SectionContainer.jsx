@@ -7,16 +7,16 @@ import LineChart from '../Components/Charts/LineChart';
 import BarChart from '../Components/Charts/BarChart';
 import PieChart from '../Components/Charts/pieChart';
 import GlobalMap from '../Components/Map/GlobalMap';
-import MainStats from './MainStatus';
+import MainStats from './WWStats';
 
 const SectionContainer = () => {
   return (
     <Container className='MidSection' fluid>
-      {/* <Row>
+       <Row>
         <Col xs='12' sm='12' md='12' lg='12' xl='12'>
           <MainStats/>
         </Col>
-      </Row> */}
+      </Row> 
       <Row className='rowPadding'>
         <Col xs='12' sm='12' md='12' lg='8' xl='8' className='noPadding'>
           <p className='mapHeader'>
