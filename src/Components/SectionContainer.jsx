@@ -3,20 +3,20 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import AllCountriesList from './AllCountriesList';
-import LineChart from '../Charts/LineChart';
-import BarChart from '../Charts/BarChart';
-import PieChart from '../Charts/pieChart';
-import GlobalMap from '../Map/GlobalMap';
+import LineChart from '../Components/Charts/LineChart';
+import BarChart from '../Components/Charts/BarChart';
+import PieChart from '../Components/Charts/pieChart';
+import GlobalMap from '../Components/Map/GlobalMap';
 import MainStats from './MainStatus';
 
 const SectionContainer = () => {
   return (
     <Container className='MidSection' fluid>
-      <Row>
+      {/* <Row>
         <Col xs='12' sm='12' md='12' lg='12' xl='12'>
           <MainStats/>
         </Col>
-      </Row>
+      </Row> */}
       <Row className='rowPadding'>
         <Col xs='12' sm='12' md='12' lg='8' xl='8' className='noPadding'>
           <p className='mapHeader'>

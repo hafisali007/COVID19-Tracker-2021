@@ -8,7 +8,7 @@ const MainStatus = ({
   AllCountriesData: { MainStatus, allCountriesloading },
   CurrentCountryData: { currentCountry }
 }) => {
-  const { updated, cases, todayCases, deaths, todayDeaths, recovered, tests } =
+  const { cases, todayCases, deaths, todayDeaths, recovered, tests } =
   MainStatus || {};
 
   return (
@@ -27,7 +27,6 @@ const MainStatus = ({
           todayDeaths={todayDeaths}
           recovered={recovered}
           tests={tests}
-          updated={updated}
         />
       ) : (
         <Child
@@ -39,7 +38,6 @@ const MainStatus = ({
           todayDeaths={currentCountry.todayDeaths}
           recovered={currentCountry.recovered}
           tests={currentCountry.tests}
-          updated={currentCountry.updated}
         />
       )}
     </div>
@@ -47,7 +45,7 @@ const MainStatus = ({
 };
 
 MainStatus.prototype = {
-    MainStatus: PropTypes.object,
+  MainStatus: PropTypes.object,
   allCountriesloading: PropTypes.bool,
   currentCountry: PropTypes.object
 };

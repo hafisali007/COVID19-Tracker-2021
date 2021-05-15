@@ -11,8 +11,7 @@ import Tooltip from 'react-bootstrap/Tooltip';
     deaths,
     todayDeaths,
     recovered,
-    tests,
-    updated
+    tests
   }) => {
   return (    
     <>
@@ -127,8 +126,7 @@ Status.prototype = {
   deaths: PropTypes.number,
   todayDeaths: PropTypes.number,
   recovered: PropTypes.number,
-  tests: PropTypes.number,
-  updated: PropTypes.number
+  tests: PropTypes.number
 };
 
 export default Status;

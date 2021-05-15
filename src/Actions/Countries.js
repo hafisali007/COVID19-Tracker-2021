@@ -1,6 +1,6 @@
 import {
     GET_ALL_COUNTRIES,
-    GET_WWStats,
+    GET_MainStatus,
     SET_ALL_COUNTRIES_LOADING,
     ERROR
   } from './Types';
@@ -39,7 +39,7 @@ import {
     setLoading();
     try {
       const res = await fetch(`${baseUrl}v2/all`);
-      dispatch({ type: GET_WWStats, payload: await res.json() });
+      dispatch({ type: GET_MainStatus, payload: await res.json() });
     } catch (err) {
       dispatch({ type: ERROR, payload: err.message });
     }
