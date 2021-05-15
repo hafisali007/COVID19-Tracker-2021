@@ -2,6 +2,7 @@ import React from 'react';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import PropTypes from 'prop-types';
+import moment from 'moment';
 
 const WWStatesChild = ({
   country = null,
@@ -111,7 +112,7 @@ const WWStatesChild = ({
       <p className='lastUpdate'>
         <i className='far fa-clock' />
         Last update:
-        {/* <span>{updated > 0 && moment(updated).fromNow()}.</span> */}
+        <span>{updated > 0 && moment(updated).fromNow()}.</span>
       </p>
     </>
   );

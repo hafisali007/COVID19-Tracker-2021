@@ -8,6 +8,7 @@ import BarChart from '../Components/Charts/BarChart';
 import PieChart from '../Components/Charts/pieChart';
 import GlobalMap from '../Components/Map/GlobalMap';
 import MainStats from './WWStats';
+import 'font-awesome/css/font-awesome.min.css';
 
 const SectionContainer = () => {
   return (
