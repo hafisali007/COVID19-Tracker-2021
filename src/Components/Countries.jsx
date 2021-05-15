@@ -13,7 +13,7 @@ import AsyncSelect from 'react-select/async';
 import CountriesItem from './CountriesItem';
 import PropTypes from 'prop-types';
 import Spinner from 'react-bootstrap/Spinner';
-import Col from 'react-bootstrap/Col';
+import Col from 'react-bootstrap/';
 
 const Countries = ({
   AllCountriesData: { allCountriesData, allCountriesloading },
