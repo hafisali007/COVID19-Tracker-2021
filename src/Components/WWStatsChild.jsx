@@ -33,7 +33,7 @@ const WWStatesChild = ({
           key='Cases'
           placement='bottom'
           overlay={
-            <Tooltip className='myToolTip' id='tooltip-bottom'>
+            <Tooltip className='myToolTip cases' id='tooltip-bottom'>
               Confirmed Cases
             </Tooltip>
           }>
@@ -57,7 +57,7 @@ const WWStatesChild = ({
           key='Deaths'
           placement='bottom'
           overlay={
-            <Tooltip className='myToolTip' id='tooltip-bottom'>
+            <Tooltip className='myToolTip deaths' id='tooltip-bottom'>
               Confirmed Deaths
             </Tooltip>
           }>
@@ -81,7 +81,7 @@ const WWStatesChild = ({
           key='Recovered'
           placement='bottom'
           overlay={
-            <Tooltip className='myToolTip' id='tooltip-bottom'>
+            <Tooltip className='myToolTip recovers' id='tooltip-bottom'>
               Confirmed Recovered
             </Tooltip>
           }>
@@ -97,7 +97,7 @@ const WWStatesChild = ({
           key='Tests'
           placement='bottom'
           overlay={
-            <Tooltip className='myToolTip' id='tooltip-bottom'>
+            <Tooltip className='myToolTip tests' id='tooltip-bottom'>
               Confirmed Tests
             </Tooltip>
           }>

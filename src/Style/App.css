@@ -70,7 +70,8 @@ code {
 }
 
 .navIcons:hover {
-  color: rgb(0, 165, 82);
+  /* color: rgb(0, 165, 82); */
+  color: rgb(4, 4, 4);
 }
 
 .navIconsSpan {
@@ -83,7 +84,49 @@ code {
   color: rgb(255, 255, 255) !important;
 }
 
-.myToolTip > .tooltip-inner {
+.myToolTip.default > .tooltip-inner {
+  background-color: #4d4d4d;
+  color: rgb(255, 255, 255) !important;
+  opacity: 1 !important;
+  border: 1px solid #4d4d4d;
+}
+
+/* Tooltip Arrow */
+.myToolTip.default span.arrow::before,
+.myToolTip.default .arrow::before {
+  border-bottom: 5px solid #4d4d4d !important;
+}
+
+
+.myToolTip.cases > .tooltip-inner {
+  background-color: #4d4d4d;
+  color: rgb(255, 255, 255) !important;
+  opacity: 1 !important;
+  border: 1px solid #4d4d4d;
+}
+
+/* Tooltip Arrow */
+.myToolTip.cases span.arrow::before,
+.myToolTip.cases .arrow::before {
+  border-bottom: 5px solid #4d4d4d !important;
+}
+
+
+.myToolTip.deaths > .tooltip-inner {
+  background-color: #d32a41;
+  color: rgb(255, 255, 255) !important;
+  opacity: 1 !important;
+  border: 1px solid #d32a41;
+}
+
+/* Tooltip Arrow */
+.myToolTip.deaths span.arrow::before,
+.myToolTip.deaths .arrow::before {
+  border-bottom: 5px solid #d32a41 !important;
+}
+
+
+.myToolTip.recovers > .tooltip-inner {
   background-color: rgb(0, 165, 82);
   color: rgb(255, 255, 255) !important;
   opacity: 1 !important;
@@ -91,9 +134,23 @@ code {
 }
 
 /* Tooltip Arrow */
-.myToolTip > .bs-tooltip-auto[x-placement^='bottom'] span.arrow::before,
-.bs-tooltip-bottom .arrow::before {
+.myToolTip.recovers span.arrow::before,
+.myToolTip.recovers .arrow::before {
   border-bottom: 5px solid rgb(0, 165, 82) !important;
+}
+
+
+.myToolTip.tests > .tooltip-inner {
+  background-color: #772dcc;
+  color: rgb(255, 255, 255) !important;
+  opacity: 1 !important;
+  border: 1px solid #772dcc;
+}
+
+/* Tooltip Arrow */
+.myToolTip.tests > .bs-tooltip-auto[x-placement^='bottom'] span.arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom: 5px solid #772dcc !important;
 }
 /* Navbar END */
 
@@ -594,11 +651,12 @@ code {
   margin: 10px 0 0 0 !important;
   bottom: 0;
   width: 100%;
+  /* position: absolute; */
 }
 
 .botNavbar {
   width: 100%;
-  height: 40px;
+  height: 50px;
   position: relative;
   background-color: rgb(245, 245, 245) !important;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);

@@ -27,11 +27,11 @@ const CountriesListItem = ({
           key='Cases'
           placement='bottom'
           overlay={
-            <Tooltip className='myToolTip' id='tooltip-bottom'>
+            <Tooltip className='myToolTip cases' id='tooltip-bottom'>
               Confirmed Cases
             </Tooltip>
           }>
-          <div className='Cases'>
+          <div className='Cases' aria-describedby="tooltip-bottom">
             <i className='fas fa-users'></i>
             {cases !== null
               ? cases.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
@@ -51,7 +51,7 @@ const CountriesListItem = ({
           key='Deaths'
           placement='bottom'
           overlay={
-            <Tooltip className='myToolTip' id='tooltip-bottom'>
+            <Tooltip className='myToolTip deaths' id='tooltip-bottom'>
               Confirmed Deaths
             </Tooltip>
           }>
@@ -75,10 +75,10 @@ const CountriesListItem = ({
           key='Recovered'
           placement='bottom'
           overlay={
-            <Tooltip className='myToolTip' id='tooltip-bottom'>
+            <Tooltip className='myToolTip recovers' id='tooltip-bottom'>
               Confirmed Recovered
             </Tooltip>
-          }>
+          }>          
           <div className='Recovered'>
             <i className='fas fa-hospital-user'></i>
             {recovered !== null
@@ -91,7 +91,7 @@ const CountriesListItem = ({
           key='Tests'
           placement='bottom'
           overlay={
-            <Tooltip className='myToolTip' id='tooltip-bottom'>
+            <Tooltip className='myToolTip tests' id='tooltip-bottom'>
               Confirmed Tests
             </Tooltip>
           }>
