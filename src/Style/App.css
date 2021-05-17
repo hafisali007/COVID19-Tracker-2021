@@ -545,11 +545,12 @@ code {
 
 /* Cases/ Deaths/ Recovered/ Tests */
 .CDR {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   box-sizing: border-box;
   margin: 4px 0 0 0;
   text-align: center;
-  display: block;
   font-weight: bold;
   font-size: 0.8em;
   width: 100%;
@@ -559,7 +560,8 @@ code {
   color: rgb(60, 60, 60);
   display: inline-block;
   text-align: center;
-  width: 32%;
+  /* width: 32%; */
+  flex: 1;
   margin: 0 2px;
 }
 
@@ -573,8 +575,9 @@ code {
   color: rgb(241, 81, 81);
   display: inline-block;
   text-align: center;
-  width: 23%;
+  /* width: 23%; */
   margin: 0 2px;
+  flex: 1;
 }
 
 .Deaths i {
@@ -587,8 +590,9 @@ code {
   color: rgb(25, 173, 87);
   display: inline-block;
   text-align: center;
-  width: 19%;
+  /* width: 19%; */
   margin: 0 2px;
+  flex: 1;
 }
 
 .Recovered i {
@@ -601,7 +605,8 @@ code {
   color: rgb(119, 45, 204);
   display: inline-block;
   text-align: center;
-  width: 20%;
+  /* width: 20%; */
+  flex: 1;
   margin: 0 2px;
 }
 
@@ -652,11 +657,20 @@ code {
   bottom: 0;
   width: 100%;
   /* position: absolute; */
+  text-align: center;
 }
+ /* .footer a{
+color: #646464;
+text-decoration: none
+ }
+ */
+ .footer a:hover{
+  text-decoration: none
+ }
 
 .botNavbar {
   width: 100%;
-  height: 50px;
+  height: 70px;
   position: relative;
   background-color: rgb(245, 245, 245) !important;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);

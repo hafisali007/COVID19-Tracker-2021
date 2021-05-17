@@ -22,6 +22,7 @@ const GlobalMap = ({
   });
 
   const [settings, setsettings] = useState({
+    width: '100%',
     dragPan: false,
     touchAction: 'pan-y',
     dragRotate: false,
